@@ -25,22 +25,30 @@
 
 /* Our Own Styling */
 
-#micwire {
-    transition: all 0.5s ease;
-    transform-origin: center;
-}
-#michead {
-    transition: all 1s linear;
-}
-#mic:hover #micwire {
-    fill: #fff;
-    transform: rotate(130deg);
-}
-#mic:hover #michead {
-    fill: orange;
-    transform: rotate(90deg);
+#mic {
+    transition: all 1s ease;
 }
 
+#micwire {
+    transition: all 0.75s ease;
+}
+
+#michead {
+    transition: all 0.75s ease;
+    transform-origin: center;
+}
+
+#mic:hover {
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+  filter: contrast(200%);
+  filter: drop-shadow(-3px -3px 3px blue);
+}
+@keyframes shake {
+  0% { transform: rotate(15deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(15deg); }
+}
     </style>
   </defs>
   <g id="micwire">
