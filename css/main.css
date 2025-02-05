@@ -1,0 +1,60 @@
+h1 {
+    font-size: 5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* SMILE */
+
+#smileeyes {
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+#smilebg {
+    transition: all 1s linear;
+}
+#smile:hover #smilebg {
+    fill: red;
+    transform: rotate(130deg);
+}
+#smile:hover #smileeyes {
+    fill: orange;
+    transform: rotate(130deg);
+}
+
+/* DISC */
+
+#discbg {
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+#disccenter {
+    transition: all 1s linear;
+}
+#disc:hover #discbg {
+    fill: red;
+    transform: rotate(130deg);
+}
+#disc:hover #disccenter {
+    fill: orange;
+}
+
+/* LAUGH */
+
+#laugheyes {
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+#laughbg {
+    transition: all 1s linear;
+}
+#laugh:hover #laughbg {
+    fill: red;
+    transform: rotate(130deg);
+}
+#laugh:hover #laugheyes {
+    fill: orange;
+    transform: rotate(180deg);
+}
