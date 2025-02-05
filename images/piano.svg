@@ -66,6 +66,13 @@
   100% { transform: rotate(20deg); }
 }
     </style>
+    <script>
+    const pianokeyboard = document.querySelector('#piano');
+function iconLogId() {
+    console.log(this.id);
+}
+pianokeyboard.addEventListener('click', iconLogId);
+    </script>
   </defs>
   <g id="pianobg">
     <path id="pianobgfill" class="st6" d="M28.5,95.7C214.4,57.5,336.2,35.3,505.3,5.2c47.4-8.4,45.9,9,56.6,60.2,6.7,32.2,14.5,76.2,20.2,106.4,6.4,34.1-12.7,32.4-96,46.8-58.3,10.1-118.4,22.2-176.6,33.1-58.1,10.9-116.3,21.5-174.4,32.7-81,15.6-97.8,21.9-102.9-4.9C5.5,137.4-15.2,100.4,28.5,95.7"/>

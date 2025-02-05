@@ -46,6 +46,13 @@
   100% { transform: rotate(-15deg); }
 }
     </style>
+    <script>
+    const musicshaker = document.querySelector('#shaker');
+function iconLogId() {
+    console.log(this.id);
+}
+musicshaker.addEventListener('click', iconLogId);
+    </script>
   </defs>
   <g id="shakerhandle">
     <g id="shakerhandlefill">
