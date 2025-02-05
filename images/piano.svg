@@ -36,20 +36,34 @@
 
 /* Our Own Styling */
 
+#piano {
+    transition: all 1s ease;
+}
+
 #pianokeys {
-    transition: all 0.5s ease;
+    transition: all 0.75s ease;
+}
+
+#pianobg {
+    transition: all 0.75s ease;
     transform-origin: center;
 }
-#pianobg {
-    transition: all 1s linear;
+
+#pianokeylines {
+    transition: all 0.75s ease;
+    transform-origin: center;
 }
-#piano:hover #pianokeys {
-    fill: #fff;
-    transform: rotate(130deg);
+
+#piano:hover {
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+  transform: scale(3, 3);
+  filter: grayscale(200%);
 }
-#piano:hover #pianobg {
-    fill: orange;
-    transform: rotate(90deg);
+@keyframes shake {
+  0% { transform: rotate(20deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(20deg); }
 }
     </style>
   </defs>

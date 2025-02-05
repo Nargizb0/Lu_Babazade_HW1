@@ -8,53 +8,70 @@ p {
 
 /* SMILE */
 
+#smile {
+    transition: all 1s ease;
+}
+
 #smileeyes {
-    transition: all 0.5s ease;
+    transition: all 0.75s ease;
     transform-origin: center;
 }
-#smilebg {
-    transition: all 1s linear;
+
+#smilemouth {
+    transition: all 0.75s ease;
+    transform-origin: center;
 }
-#smile:hover #smilebg {
-    fill: red;
-    transform: rotate(130deg);
+
+
+#smile:hover {
+    transform: scale(1.5, 1.5);
 }
+
 #smile:hover #smileeyes {
-    fill: orange;
-    transform: rotate(130deg);
+    transform: rotate(30deg);
+}
+
+#smile:hover #smilemouth {
+    transform: rotate(30deg);
 }
 
 /* DISC */
 
+#disc {
+    transition: all 1s ease;
+}
+
 #discbg {
-    transition: all 0.5s ease;
+    transition: all 0.75s ease;
+}
+
+#disclines {
+    transition: all 0.75s ease;
     transform-origin: center;
 }
-#disccenter {
-    transition: all 1s linear;
+
+#disc:hover {
+    transform: rotate(360deg) scale(2, 2);
 }
-#disc:hover #discbg {
-    fill: red;
-    transform: rotate(130deg);
-}
-#disc:hover #disccenter {
-    fill: orange;
-}
+
 
 /* LAUGH */
 
+#laugh {
+    transition: all 1s ease;
+}
+
 #laugheyes {
-    transition: all 0.5s ease;
+    transition: all 0.75s ease;
     transform-origin: center;
 }
-#laughbg {
-    transition: all 1s linear;
+
+#laughmouth {
+    transition: all 0.75s ease;
+    transform-origin: center;
 }
-#laugh:hover #laughbg {
-    fill: red;
-    transform: rotate(130deg);
+
+#laugh:hover {
+    transform: scale(1.5, 1.5) rotate(-30deg);
 }
-#laugh:hover #laugheyes {
-    fill: orange;
-    transform: rotate(180deg);
-}
+

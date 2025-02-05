@@ -21,20 +21,29 @@
 
 /* Our Own Styling */
 
+#shaker {
+    transition: all 1s ease;
+}
+
 #shakerhandle {
-    transition: all 0.5s ease;
+    transition: all 0.75s ease;
+}
+
+#shakerhead {
+    transition: all 0.75s ease;
     transform-origin: center;
 }
-#shakerhead {
-    transition: all 1s linear;
+
+#shaker:hover {
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+  filter: blur(2px);
+  filter: drop-shadow(3px 3px 3px red);
 }
-#shaker:hover #shakerhead {
-    fill: #fff;
-    transform: rotate(130deg);
-}
-#shaker:hover #shakerhandle {
-    fill: orange;
-    transform: rotate(90deg);
+@keyframes shake {
+  0% { transform: rotate(-15deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(-15deg); }
 }
     </style>
   </defs>
